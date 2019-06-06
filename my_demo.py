@@ -4,7 +4,11 @@
 # y= "I am beginner in Python"
 # print(y)
 # print(y[1])
+<<<<<<< HEAD
 # print(y[2:5])
+=======
+print(y[2:5])
+>>>>>>> c122a96d61bf951cf3c9a02cb9c258ad4b7cf061
 # x = 1
 # s = 2.8
 # z = 1j
