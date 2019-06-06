@@ -4,7 +4,7 @@
 # y= "I am beginner in Python"
 # print(y)
 # print(y[1])
-# print(y[2:5])
+print(y[2:5])
 # x = 1
 # s = 2.8
 # z = 1j
