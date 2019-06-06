@@ -8,13 +8,13 @@
 # x = 1
 # s = 2.8
 # z = 1j
-# print(type(x))
+print(type(x))
 # print(type(y))
 # print(type(s))
 # print(type(z))
 # a = int(2.8)
 # b = float(1)
-# print(a)
-# print(b)
-wel = raw_input("Enter Your Name: ")
+print(a)
+print(b)
+wel = input("Enter Your Name: ")
 print("Hi " + wel)
