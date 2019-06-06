@@ -16,5 +16,5 @@
 # b = float(1)
 # print(a)
 # print(b)
-wel = input("Enter Your Name: ")
+wel = raw_input("Enter Your Name: ")
 print("Hi " + wel)
