@@ -5,12 +5,10 @@ def get_val():
     hr = t.hour
     return hr
 
-def get_nam():
-    nam = input("Enter the Name: ")
+def get_nam(nam):
     return nam
 
-if __name__ == "__main__":
-
+def display():
     if get_val()<12:
         print("Good Morning "+ get_nam())
     elif get_val()<15:
@@ -19,3 +17,10 @@ if __name__ == "__main__":
         print("Good Evening " + get_nam())
     else:
         print("Good Night " + get_nam())
+
+
+if __name__ == "__main__":
+
+    nams = input("Enter the Name: ")
+    print(get_nam(nams))
+    get_val()
