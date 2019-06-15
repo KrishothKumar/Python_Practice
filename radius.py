@@ -12,4 +12,5 @@ def Radius(area):
 
 #Main Statement
 if __name__ == "__main__":
-    print("Radius of the Circle is",Radius(28.26))
+    area = float(input("Enter the Area of Circle: "))
+    print("Radius of the Circle is",Radius(area))
