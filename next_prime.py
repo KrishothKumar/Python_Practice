@@ -8,6 +8,8 @@ def nex_prime(num):
 def prime(num):
     if num == 2:
         return True
+    elif num%2==0:
+        return False
 
     for i in range(3, (num//3),2):
         if(num % i == 0):
