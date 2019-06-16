@@ -1,4 +1,4 @@
-#This program
+#This program is used to print odd first and even at last
 
 
 def find(list):
@@ -13,6 +13,7 @@ def find(list):
             #print(temp2)
     return temp2+temp1
 
+#main
 if __name__=="__main__":
     lists = [0,1,2,3,4,5,6,7,8,9,10]
     lists = find(lists)
