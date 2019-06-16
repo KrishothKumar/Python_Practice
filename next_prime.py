@@ -1,14 +1,18 @@
 #This program
 
 def nex_prime(num):
-     for i in range(num+1, num*2, 1):
-         if prime(i):
+    if num ==0 or num ==1:
+        num=1
+    for i in range(num+1, (num+1)*2, 1):
+        if prime(i):
              return i
 
 def prime(num):
     if num == 2:
         return True
     elif num%2==0:
+        return False
+    elif num == 1:
         return False
 
     for i in range(3, (num//3),2):
