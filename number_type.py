@@ -1,11 +1,12 @@
 # This program is to find whether give input is prime or not
 
 def prime(num):
-    for i in range(2, num):
+    if num == 2:
+        return True
+    for i in range(3, (num//2),2):
         if(num % i == 0):
-            return 1
-        else:
-            return 0
+            return False
+    return True
     # if not (num%2 == 0):
     #     return 1
     # else:
@@ -16,7 +17,7 @@ if __name__ == "__main__":
     nu=int(input("Enter the Number: "))
     i = prime(nu)
 
-    if i == 0:
+    if i:
         print("Giver Value is Prime")
     else:
         print("Given Value is Not a Prime")
