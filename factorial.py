@@ -1,4 +1,4 @@
-#this program
+# This program is to print factorial
 
 def factorial(num):
     factor=1
