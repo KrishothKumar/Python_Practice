@@ -3,7 +3,9 @@
 def prime(num):
     if num == 2:
         return True
-    for i in range(3, (num//2),2):
+    elif num%2==0:
+        return False
+    for i in range(3, (num//3),2):
         if(num % i == 0):
             return False
     return True
