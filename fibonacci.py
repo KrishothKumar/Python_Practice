@@ -23,4 +23,6 @@ def display(num,t0,t1):
 
 #main
 if __name__ == "__main__":
-    print(display(4,t0,t1))
+    num= int(input("Enter the number: "))
+    list=display(num,t0,t1)
+    print("Fibonacci Series of",num,"th position in series is",list[num-1])
