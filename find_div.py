@@ -1,5 +1,6 @@
 # This is program is used to display Divisible of 7 and Note multiply of 5
 
+#second loading fn
 def div_7(num,num2):
     list=[]
     for i in range(num,num2+1,1):
@@ -7,6 +8,7 @@ def div_7(num,num2):
             list.append(i)
     return list
 
+#first loading fn
 def mult_5(num,num2):
     ls=[]
     l= div_7(num,num2)
