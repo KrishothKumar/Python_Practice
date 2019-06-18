@@ -10,13 +10,15 @@ def fibon(t0,t1):
 
 def display(num,t0,t1):
     i=0
+    list=[0,1]
     while True:
-        print(t0," , ",t1)
-        t0, t1=fibon(t0,t1)
+        # print(t0," , ",t1)
+        t0,t1 = fibon(t0,t1)
+        list.append(t1)
         i=i+1
         if i>num:
             break
-
+    return list
 
 
 #main
