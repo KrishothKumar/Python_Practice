@@ -1,8 +1,9 @@
 #This program
 
 def nex_prime(num):
-    if num ==0 or num ==1:
+    if num == 0 or num == 1:
         num=1
+        
     for i in range(num+1, (num+1)*2, 1):
         if prime(i):
              return i

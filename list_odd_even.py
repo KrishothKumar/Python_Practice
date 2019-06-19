@@ -1,17 +1,18 @@
-#This program is used to print odd first and even at last
+# This program is used to print odd first and even at last
 
 
 def find(list):
     temp1=[]
     temp2=[]
+
     for i in list:
         if i%2 == 0:
             temp1.append(i)
-            #print(temp1)
         else:
             temp2.append(i)
-            #print(temp2)
+
     return temp2+temp1
+
 
 #main
 if __name__=="__main__":

@@ -2,7 +2,6 @@
 
 
 def sums(num):
-
     sum1=0
     sum2=0
 
@@ -11,6 +10,7 @@ def sums(num):
             sum1+=i
         else:
             sum2+=i
+            
     return sum1,sum2
 
 #main
