@@ -6,6 +6,7 @@ def palindrome(str):
 # Main
 if __name__ == "__main__":
     x=palindrome("mom")
+
     if x:
         print("is palindrome")
     else:
