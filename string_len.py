@@ -1,8 +1,7 @@
 #this program
 
-def str_len(l):
-    length=len(l)
-    return length
+def str_len(string):
+    return len(string)
 
 
 if __name__ == "__main__":

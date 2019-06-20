@@ -1,12 +1,11 @@
-#This program is to print Nth fibonacci number
+# This program is to print Nth fibonacci number
 
-t0,t1 = 0,1
-
-def fibon(t0,t1):
+def fibon(t0 = 0, t1 = 1):
     temp= t0+t1
     t0=t1
     t1=temp
     return t0,t1
+
 
 def display(num,t0,t1):
     i=0
@@ -21,7 +20,7 @@ def display(num,t0,t1):
     return list
 
 
-#main
+# main
 if __name__ == "__main__":
     num= int(input("Enter the number: "))
     list=display(num,t0,t1)

@@ -5,9 +5,9 @@ def palindrome(str):
 
 # Main
 if __name__ == "__main__":
-    x=palindrome("mom")
+    user_input = palindrome("mom")
 
-    if x:
+    if user_input:
         print("is palindrome")
     else:
         print("is not palindrome")

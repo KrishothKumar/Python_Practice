@@ -12,6 +12,7 @@ def checking_line():
     file.close()
     return count
 
+
 # Main
 if __name__=="__main__":
     print(checking_line())

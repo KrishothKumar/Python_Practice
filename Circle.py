@@ -2,16 +2,14 @@
 
 PI =  3.14
 
-#r*r is repesents squire and PI =3.14
+# r*r is repesents squire and PI =3.14
 def area(r):
-    ar = PI * (r**2)
-    return ar
+    return PI * (r**2)
 
 
 # 2 multiply PI=3.14 multiply r
-def cir(r):
-    cir =  PI * (2 * r)
-    return cir
+def circumference(r):
+    return PI * (2 * r)
 
 
 # Main
