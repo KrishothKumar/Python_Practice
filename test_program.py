@@ -9,11 +9,15 @@ from next_prime import nex_prime
 from previous_prime import previous_prime
 from word_reverse import string_reverse
 from palindrome import palindrome
+from list_sum import sums
+from list_larg import largest_list
+from list_odd_even import find
+from list_fist_last import first_last_element
 
 
 @pytest.mark.parametrize("input_1, input_2, input_3, exact_output",
                               [
-                                 ( 5, 2, 3, 5),
+                                 (5, 2, 3, 5),
                                  (1, 10, 7, 10),
                                  (9, 5, 3, 9)
                               ]
@@ -106,3 +110,33 @@ def test_string_reverse(input_1,exact_output):
                         )
 def test_palindrome(input_1,exact_output):
     assert palindrome(input_1)==exact_output
+
+@pytest.mark.parametrize("input_1,exact_output",
+                            [
+                            ([0,1,2,3,4,5,6,7,8,9,10], (30,25)),
+                            ([3,1,10,2,8,5,7,9,6,4,0], (30,25)),
+                            ([25,23,22,40], (62,48))
+                            ]
+                        )
+def test_sums(input_1,exact_output):
+    assert sums(input_1) == exact_output
+
+@pytest.mark.parametrize("input_1,exact_output",
+                            [
+                            ([0,1,2,3,4,5,6,7,8,9,10], [1,3,5,7,9,0,2,4,6,8,10]),
+                            ([3,1,10,2,8,5,7,9,6,4,0], [3,1,5,7,9,10,2,8,6,4,0]),
+                            ([25,23,22,40], [25,23,22,40])
+                            ]
+                        )
+def test_find(input_1,exact_output):
+    assert find(input_1) == exact_output
+
+@pytest.mark.parametrize("input_1,exact_output",
+                            [
+                            ([0,1,2,3,4,5,6,7,8,9,10], (0,10)),
+                            ([3,1,10,2,8,5,7,9,6,4,0], (0,10)),
+                            ([25,23,22,40], (22,40))
+                            ]
+                        )
+def test_first_last_element(input_1,exact_output):
+    assert first_last_element(input_1) == exact_output
