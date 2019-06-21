@@ -1,4 +1,4 @@
-# This program
+# This program is used to display largest number from list
 
 def largest_list(list):
     list_value = len(list)
