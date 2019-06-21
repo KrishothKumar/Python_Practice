@@ -1,18 +1,16 @@
 # This program is use to display the Denomination valuse
 
 
-def change(user_input):
+def change(user_input): # 7889 => 1889
     denomination_list = [2000,500,200,100,50,20,10,5,2,1]
     result_list = []
 
     for list_input in denomination_list:
-        if user_input>=list_input:
+        if user_input >= list_input and user_input > 0:
 
-            user_input1=user_input
-            user_input=user_input%list_input
-            reminer_value=(user_input1-user_input)//list_input
-            result_list.append((list_input,reminer_value))
-            # result_list[result_list.index(list_input)].append(reminer_value)
+            reminer_value = user_input//list_input
+            user_input = user_input % list_input
+            result_list.append((list_input, reminer_value))
 
     return result_list
 
