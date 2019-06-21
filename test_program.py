@@ -7,9 +7,10 @@ from lcd import lcd
 from number_type import prime
 from next_prime import nex_prime
 from previous_prime import previous_prime
+from word_reverse import string_reverse
 
 
-@pytest.mark.parametrize("input_1,input_2,input_3,exact_output",
+@pytest.mark.parametrize("input_1, input_2, input_3, exact_output",
                               [
                                  ( 5, 2, 3, 5),
                                  (1, 10, 7, 10),
@@ -56,7 +57,7 @@ def test_lcd(input_1,input_2,exact_output):
                             [
                             (2, True),
                             (3, True),
-                            (4, False),
+                            (4, False)
                             ]
                         )
 def test_prime(input_1,exact_output):
@@ -82,3 +83,14 @@ def test_nex_prime(input_1,exact_output):
                         )
 def test_previous_prime(input_1,exact_output):
     assert previous_prime(input_1) == exact_output
+
+@pytest.mark.parametrize("input_1,exact_output",
+                            [
+                            ("Pradeep loves swetha", "swetha loves Pradeep"),
+                            ("but she don't know's it", "it know's don't she but"),
+                            ("pradeep loves pallavi", "pallavi loves pradeep"),
+                            ("but she love another fellow", "fellow another love she but")
+                            ]
+                        )
+def test_string_reverse(input_1,exact_output):
+    assert string_reverse(input_1) == exact_output
