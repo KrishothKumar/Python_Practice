@@ -8,6 +8,7 @@ from number_type import prime
 from next_prime import nex_prime
 from previous_prime import previous_prime
 from word_reverse import string_reverse
+from palindrome import palindrome
 
 
 @pytest.mark.parametrize("input_1, input_2, input_3, exact_output",
@@ -94,3 +95,14 @@ def test_previous_prime(input_1,exact_output):
                         )
 def test_string_reverse(input_1,exact_output):
     assert string_reverse(input_1) == exact_output
+
+@pytest.mark.parametrize("input_1,exact_output",
+                            [
+                            ("mom", True),
+                            ("DAD", True),
+                            ("bad", False),
+                            ("NUN", True),
+                            ]
+                        )
+def test_palindrome(input_1,exact_output):
+    assert palindrome(input_1)==exact_output
