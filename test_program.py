@@ -4,6 +4,10 @@ from largest_num import largest
 from radius import radius
 from gcd import gcd
 from lcd import lcd
+from number_type import prime
+from next_prime import nex_prime
+from previous_prime import previous_prime
+
 
 @pytest.mark.parametrize("input_1,input_2,input_3,exact_output",
                               [
@@ -47,3 +51,34 @@ def test_gcd(input_1,input_2,exact_output):
                         )
 def test_lcd(input_1,input_2,exact_output):
     assert lcd(input_1, input_2) == exact_output
+
+@pytest.mark.parametrize("input_1,exact_output",
+                            [
+                            (2, True),
+                            (3, True),
+                            (4, False),
+                            ]
+                        )
+def test_prime(input_1,exact_output):
+    assert prime(input_1) == exact_output
+
+@pytest.mark.parametrize("input_1,exact_output",
+                            [
+                            (2, 3),
+                            (11, 13),
+                            (14, 17)
+                            ]
+                        )
+def test_nex_prime(input_1,exact_output):
+    assert nex_prime(input_1) == exact_output
+
+@pytest.mark.parametrize("input_1,exact_output",
+                            [
+                            (0, None),
+                            (3, 2),
+                            (4, 3),
+                            (10, 9)
+                            ]
+                        )
+def test_previous_prime(input_1,exact_output):
+    assert previous_prime(input_1) == exact_output
