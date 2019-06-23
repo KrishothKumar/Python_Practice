@@ -6,7 +6,6 @@ def transaction(user_input):
     while True:
         if user_input[0] == "d" or user_input[0] == "D":
             account_balance += int(user_input[1::])
-            continue
         elif user_input[0] =="w" or user_input[0] == "W":
             account_balance += int(user_input[1::])
         elif user_input == "end" or user_input == "END":
