@@ -1,4 +1,4 @@
-# This program is used diposit and withdrawal
+# This program is used diposit and withdrawal and show full account_balance
 
 def transaction(user_input):
     print(type(user_input))
