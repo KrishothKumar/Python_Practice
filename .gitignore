@@ -6,4 +6,10 @@ Integer.py
 
 __pycache__/
 
+python_test/
+
+python_flask/
+
 *.pyc
+dumy.html
+dumy.py
