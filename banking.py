@@ -1,8 +1,7 @@
 # This program is used diposit and withdrawal and show full account_balance
 
-def transaction(methodToRun):
+def transaction(methodToRun):# This varibale methodToRun is call user_input function
     account_balance = 0
-
     while True:
         user_inputs =  methodToRun()
 
