@@ -35,7 +35,7 @@ if __name__=="__main__":
     }
 
     user_name = input("Enter the name to se the date of bith: ")
-    final_data=birthday_date(user_name,birthday_dictionary)
+    final_data = birthday_date(user_name,birthday_dictionary)
 
     if final_data == []:
         print("No data found")
