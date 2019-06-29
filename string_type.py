@@ -22,12 +22,13 @@ def camelcase(string):
             if (ord(string[i+1])>=97) and (ord(string[i+1])<=122):
                 string = string[:i+1]+ chr(ord(string[i+1])-32)+string[i+2:]
 
+    string = string.split()
+    string = "".join(string)
     return string
 
 # Main statement
 if __name__ == "__main__":
     string = input("Enter the string :")
-
     print(lowercase(string))
     print(uppercase(string))
     print(camelcase(string))
