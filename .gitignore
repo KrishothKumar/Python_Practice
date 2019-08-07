@@ -3,11 +3,12 @@ check.py
 Datetime.py
 email_valid.py
 Integer.py
-
+Thinkmore
+selenium_env
 __pycache__/
-
+selenium
 python_test/
-
+python_django
 python_flask/
 
 *.pyc
